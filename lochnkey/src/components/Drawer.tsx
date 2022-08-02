@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Box, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SwipeableDrawer } from '@mui/material';
 import { Menu } from '@mui/icons-material';
 
-export default function Drawer() {
+function Drawer() {
     const [state, setState] = React.useState({
         drawOpen: false,
     });
@@ -60,3 +60,5 @@ export default function Drawer() {
         </div>
     );
 }
+
+export default Drawer;

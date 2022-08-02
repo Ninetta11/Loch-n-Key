@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { AppBar, Box, IconButton, styled, Toolbar, Typography } from "@mui/material";
 import { Search, More, Menu } from '@mui/icons-material';
 import Drawer from "./Drawer";
@@ -18,7 +19,7 @@ function Header() {
 
         <AppBar>
             <StyledToolbar>
-                <Box sx={{ width: '100%' }}> 
+                <Box sx={{ width: '100%' }}>
                     <img src={process.env.PUBLIC_URL + '/assets/customcolor_logo_transparent_background.png'} />
                 </Box>
                 <Box sx={{ flexShrink: 0 }}> <Drawer /></Box>
