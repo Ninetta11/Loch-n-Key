@@ -6,7 +6,7 @@ import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
 import CalendarMonthTwoToneIcon from '@mui/icons-material/CalendarMonthTwoTone';
 import MailOutlineTwoToneIcon from '@mui/icons-material/MailOutlineTwoTone';
 
-const pages = [{ title: 'Menu', link: 'menu', icon: <RestaurantMenuTwoToneIcon /> }, { title: 'Events', pageLink: 'events', icon: <CelebrationTwoToneIcon /> }, { title: 'Make a Reservation', pageLink: 'reservation', icon: <CalendarMonthTwoToneIcon /> }, { title: 'Contact Us', pageLink: 'contact', icon: <MailOutlineTwoToneIcon /> }]
+const pages = [{ title: 'Menu', link: 'menu', icon: <RestaurantMenuTwoToneIcon /> }, { title: 'Events', link: 'events', icon: <CelebrationTwoToneIcon /> }, { title: 'Make a Reservation', link: 'reservation', icon: <CalendarMonthTwoToneIcon /> }, { title: 'Contact Us', link: 'contact', icon: <MailOutlineTwoToneIcon /> }]
 
 function Drawer() {
     const [state, setState] = React.useState({
