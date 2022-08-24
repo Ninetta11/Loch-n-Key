@@ -1,6 +1,12 @@
 import * as React from 'react';
 import { Box, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SwipeableDrawer } from '@mui/material';
 import { Menu } from '@mui/icons-material';
+import RestaurantMenuTwoToneIcon from '@mui/icons-material/RestaurantMenuTwoTone';
+import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
+import CalendarMonthTwoToneIcon from '@mui/icons-material/CalendarMonthTwoTone';
+import MailOutlineTwoToneIcon from '@mui/icons-material/MailOutlineTwoTone';
+
+const pages = [{ title: 'Menu', link: 'menu', icon: <RestaurantMenuTwoToneIcon /> }, { title: 'Events', pageLink: 'events', icon: <CelebrationTwoToneIcon /> }, { title: 'Make a Reservation', pageLink: 'reservation', icon: <CalendarMonthTwoToneIcon /> }, { title: 'Contact Us', pageLink: 'contact', icon: <MailOutlineTwoToneIcon /> }]
 
 function Drawer() {
     const [state, setState] = React.useState({
@@ -30,13 +36,13 @@ function Drawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Menu', 'Events', 'Make a Reservation', 'Contact Us'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
-                        <ListItemButton>
+                {pages.map((page) => (
+                    <ListItem key={page.title} disablePadding>
+                        <ListItemButton href={page.link}>
                             <ListItemIcon>
-                                {}
+                                {page.icon}
                             </ListItemIcon>
-                            <ListItemText primary={text} />
+                            <ListItemText primary={page.title} />
                         </ListItemButton>
                     </ListItem>
                 ))}

@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { AppBar, Box, IconButton, styled, Toolbar, Typography } from "@mui/material";
-import { Search, More, Menu } from '@mui/icons-material';
+import { AppBar, Box, styled, Toolbar } from "@mui/material";
 import Drawer from "./Drawer";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({

@@ -1,14 +1,14 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
-import Header from '../components/Header';
+import { Container } from '@mui/material';
 
 
 
 function Home() {
     return (
-        <Container>
+  
+
             <h3>Home</h3>
-        </Container>
+
     )
 }
 
