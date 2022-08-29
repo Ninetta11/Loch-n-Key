@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import Button, { ButtonProps } from '@mui/material/Button';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { NoEncryption } from '@mui/icons-material';
 
 const theme = createTheme();
 
@@ -17,6 +18,7 @@ theme.typography.h3 = {
         fontSize: '1.4rem',
     },
     color: '#000000',
+    textDecoration: 'none',
 };
 
 function Footer() {
@@ -30,8 +32,8 @@ function Footer() {
                     <ThemeProvider theme={theme}>
                         <div className='padding_top'>
                             <Typography variant="h3">32 Victoria Road, LOCH</Typography>
-                            <Typography variant="h3">(03) 5659 4236</Typography>
-                            <Typography variant="h3">enquiries@lochnkey.com.au</Typography>
+                            <a href='tel:0356594236'><Typography variant="h3">(03) 5659 4236</Typography></a>
+                            <a href='mailto:enquiries@lochnkey.com.au'><Typography variant="h3">enquiries@lochnkey.com.au</Typography></a>
                         </div>
                     </ThemeProvider>
                 </Grid>

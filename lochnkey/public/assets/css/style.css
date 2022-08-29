@@ -5,20 +5,22 @@ h4 {
     font-family: 'Quicksand', sans-serif;
 }
 
-h2 {}
+.background_standard {
+    background-color: #736635;
+}
 
-h3 {}
+.padding_top {
+    margin-top: 10px;
+}
 
-h4 {}
+#contact_link {
+    color: #ffffff;
+}
 
 #homepage {
     background-image: url('../images/IMG_2627.jpeg');
     background-position: center;
     background-size: cover;
-}
-
-.padding_top {
-    margin-top: 10px;
 }
 
 #logo_footer {
