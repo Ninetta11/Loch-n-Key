@@ -1,11 +1,8 @@
 import * as React from 'react';
 import { Box, Grid, IconButton, Stack, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { styled } from '@mui/material/styles';
-import Button, { ButtonProps } from '@mui/material/Button';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { NoEncryption } from '@mui/icons-material';
 
 const theme = createTheme();
 
