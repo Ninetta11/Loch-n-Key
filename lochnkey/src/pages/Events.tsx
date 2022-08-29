@@ -3,10 +3,9 @@ import * as React from 'react';
 
 function Events() {
     return (
-        <Container>
-
-            <div>Events</div>
-        </Container>
+        <div>
+            <h1>Upcoming Events</h1>
+        </div>
     );
 }
 

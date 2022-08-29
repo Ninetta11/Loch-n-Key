@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+#homepage {
+    background-image: url('../images/IMG_2627.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.padding_top {
+    margin-top: 10px;
+}
+
+#logo_footer {
+    max-height: 70px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 599px) {
+    #logo_footer {
+        max-height: 70px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #logo_footer {
+        max-height: 80px;
+    }
+}
+
+@media (min-width: 900px) {
+    #logo_footer {
+        max-height: 110px;
+    }
+}

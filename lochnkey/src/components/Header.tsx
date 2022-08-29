@@ -19,7 +19,7 @@ function Header() {
         <AppBar>
             <StyledToolbar>
                 <Box sx={{ width: '100%' }}>
-                    <img src={process.env.PUBLIC_URL + '/assets/customcolor_logo_transparent_background.png'} />
+                    <img src={process.env.PUBLIC_URL + '/assets/logo/customcolor_logo_transparent_background.png'} />
                 </Box>
                 <Box sx={{ flexShrink: 0 }}> <Drawer /></Box>
             </StyledToolbar>
