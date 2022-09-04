@@ -10,7 +10,7 @@ const theme = createTheme();
 
 theme.typography.h2 = {
     color: '#ffffff',
-    paddingTop: '60px',
+    paddingTop: '50px',
     paddingBottom: '30px',
     fontSize: '2rem',
     '@media (min-width:600px)': {
@@ -45,21 +45,23 @@ theme.typography.h4 = {
 
 function Contact() {
     return (
-        <Box sx={{ width: '100%' }} className="background_standard">
+        <Box sx={{ width: '100%', height: '100%' }} className="background_standard">
             <Wrapper>
                 <ThemeProvider theme={theme}>
                     <Typography variant="h2">Contact Us</Typography>
                     <Grid container spacing={{ xs: 1, md: 2 }}>
-                        <Grid item xs={12} md={8}>
+                        <Grid item md={1}>
+                        </Grid>
+                        <Grid item xs={12} md={5}>
                             <Typography variant="h3">Location</Typography>
                             <Typography variant="h4">32 Victoria Rd, Loch VIC 3945</Typography>
                             <div className="mapouter">
                                 <div className="gmap_canvas">
-                                    <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=32%20Victoria%20Road,%20Loch&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" ></iframe>
+                                    <iframe width="330" height="230" id="gmap_canvas" src="https://maps.google.com/maps?q=32%20Victoria%20Road,%20Loch&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" ></iframe>
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={5}>
                             <Typography variant="h3">Contact</Typography>
                             <List>
                                 <ListItem key='phone' disablePadding>
@@ -79,8 +81,9 @@ function Contact() {
                                     </ListItemButton>
                                 </ListItem>
                             </List>
-                            <br/>
-                            <Typography variant="h4">Have a question or query? Send us a message <a id="contact_link" href="https://us1.list-manage.com/contact-form?u=768722a0c807588e7fef0d408&form_id=534586b53d5c768c2c292c319a4a37ed">here.</a></Typography>
+                            <br />
+                            <Typography variant="h4">  Have a question or query?</Typography>
+                            <Typography variant="h4">  Send us a message <a id="contact_link" href="https://us1.list-manage.com/contact-form?u=768722a0c807588e7fef0d408&form_id=534586b53d5c768c2c292c319a4a37ed">here.</a></Typography>
                         </Grid>
                     </Grid>
                 </ThemeProvider>

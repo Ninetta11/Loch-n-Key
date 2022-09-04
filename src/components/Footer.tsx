@@ -34,8 +34,8 @@ function Footer() {
                         </div>
                     </ThemeProvider>
                 </Grid>
-                <Grid item xs={4} md={2}>
-                    <Stack direction="row" alignItems="center" spacing={1}>
+                <Grid item xs={2} md={2}>
+                    <Stack direction="row" alignItems="center" spacing={0.5}>
                         <IconButton href="https://www.facebook.com/LochnKeyRestaurant">
                             <FacebookIcon color="primary" sx={{ fontSize: 60 }} />
                         </IconButton>
