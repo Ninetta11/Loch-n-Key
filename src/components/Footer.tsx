@@ -3,6 +3,7 @@ import { Box, Grid, IconButton, Stack, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { grey } from '@mui/material/colors';
 
 const theme = createTheme();
 
@@ -14,16 +15,16 @@ theme.typography.h3 = {
     [theme.breakpoints.up('md')]: {
         fontSize: '1.4rem',
     },
-    color: '#000000',
+    color: '#B2BABB',
     textDecoration: 'none',
 };
 
 function Footer() {
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box width={'100%'} bgcolor={'#1C2833'}>
             <Grid container>
                 <Grid item xs={2} md={2}>
-                    <img id='logo_footer' src={process.env.PUBLIC_URL + '/assets/logo/icon_profilepicture_customcolor.png'} />
+                    <img id='logo_footer' src={process.env.PUBLIC_URL + '/assets/logo/icon_square_transparent_customcolor.png'} />
                 </Grid>
                 <Grid item xs={6} md={8}>
                     <ThemeProvider theme={theme}>
@@ -37,10 +38,10 @@ function Footer() {
                 <Grid item xs={2} md={2}>
                     <Stack direction="row" alignItems="center" spacing={0.5}>
                         <IconButton href="https://www.facebook.com/LochnKeyRestaurant">
-                            <FacebookIcon color="primary" sx={{ fontSize: 60 }} />
+                            <FacebookIcon sx={{ fontSize: 50, color: grey[500] }} />
                         </IconButton>
                         <IconButton href="https://www.instagram.com/lochnkeyrestaurant">
-                            <InstagramIcon color="primary" sx={{ fontSize: 60 }} />
+                            <InstagramIcon sx={{ fontSize: 50, color: grey[500] }} />
                         </IconButton>
                     </Stack>
                 </Grid>
