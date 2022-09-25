@@ -8,7 +8,7 @@ import Wrapper from '../components/Wrapper';
 const theme = createTheme();
 
 theme.typography.h2 = {
-    color: '#ffffff',
+    color: '#736635',
     paddingTop: '50px',
     paddingBottom: '30px',
     fontSize: '5rem',

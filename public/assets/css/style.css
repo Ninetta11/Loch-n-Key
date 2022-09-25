@@ -25,15 +25,11 @@ a:active {
 }
 
 .background_standard {
-    background-color: #736635;
+    background-color: #1C2833;
 }
 
 .padding_top {
     margin-top: 15px;
-}
-
-#contact_link {
-    color: #ffffff;
 }
 
 #hero {
