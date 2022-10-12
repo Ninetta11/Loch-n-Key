@@ -21,11 +21,11 @@ const pages = [
     //     link: 'events',
     //     icon: <CelebrationTwoToneIcon />
     // },
-    // {
-    //     title: 'Make a Reservation',
-    //     link: 'reservation',
-    //     icon: <CalendarMonthTwoToneIcon />
-    // },
+    {
+        title: 'Make a Reservation',
+        link: 'reservation',
+        icon: <CalendarMonthTwoToneIcon />
+    },
     {
         title: 'Contact Us',
         link: 'contact',
