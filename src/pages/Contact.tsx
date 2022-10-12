@@ -52,13 +52,22 @@ function Contact() {
                     </ThemeProvider>
                 </Wrapper>
             </Box>
-            <Box sx={{ width: '100%', height: '100%' }} >
+            <Box width='100%'>
                 <Container sx={{ width: '100%', marginTop: 5, marginBottom: 5 }}>
                     <ThemeProvider theme={theme}>
-                        <Grid container spacing={{ xs: 1, md: 2 }}>
-                            <Grid item md={1}>
+                        <Grid container spacing={{ xs: 2, md: 2 }}>
+                            <Grid item xs={12} md={4}>
+                                <Typography variant="h3">Opening Hours</Typography>
+                                <List>
+                                    <ListItem><Typography variant="h4">Wednesday  11am til late</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Thursday  11am til late</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Friday  11am til late</Typography></ListItem>
+                                    <ListItem> <Typography variant="h4">Saturday  8am til late</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Sunday  8am til late</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Open all Public Holidays except for Christmas Day & Boxing Day</Typography></ListItem>
+                                </List>
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={12} md={4}>
                                 <Typography variant="h3">Location</Typography>
                                 <Typography variant="h4">32 Victoria Rd, Loch VIC 3945</Typography>
                                 <div className="mapouter">
@@ -67,7 +76,7 @@ function Contact() {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={12} md={4}>
                                 <Typography variant="h3">Contact</Typography>
                                 <List>
                                     <ListItem key='phone' disablePadding>
