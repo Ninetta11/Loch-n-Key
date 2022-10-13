@@ -11,11 +11,11 @@ const pages = [
         link: 'home',
         icon: <HomeIcon />
     },
-    // {
-    //     title: 'Menu',
-    //     link: 'menu',
-    //     icon: <RestaurantMenuTwoToneIcon />
-    // },
+    {
+        title: 'Menu',
+        link: 'menu',
+        icon: <RestaurantMenuTwoToneIcon />
+    },
     // {
     //     title: 'Events',
     //     link: 'events',

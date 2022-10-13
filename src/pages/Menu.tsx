@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Container, Grid, List, ListItem, ListItemButton, ListItemIcon, Typography } from '@mui/material';
+import { Box, Container, ImageList, ImageListItem, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Wrapper from '../components/Wrapper';
 
@@ -40,6 +40,7 @@ theme.typography.h4 = {
     paddingBottom: '10px',
 };
 
+
 function Menu() {
     return (
         <div>
@@ -50,9 +51,25 @@ function Menu() {
                     </ThemeProvider>
                 </Wrapper>
             </Box>
-            <Box sx={{ width: '100%', height: '100%' }} >
+            <Box sx={{ width: '100%' }}>
                 <Container sx={{ width: '100%', marginTop: 5, marginBottom: 5 }}>
                     <ThemeProvider theme={theme}>
+                        <ImageList cols={1}>
+                            <ImageListItem key='Menu'>
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/assets/images/menu.jpg?auto=format`}
+                                    alt='Loch & Key Menu'
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                            <ImageListItem key='Kids Menu'>
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/assets/images/kidsmenu.jpg?auto=format`}
+                                    alt='Loch & Key Kids Menu'
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        </ImageList>
                     </ThemeProvider>
                 </Container>
             </Box >
