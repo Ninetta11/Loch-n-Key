@@ -30,16 +30,15 @@ theme.typography.h3 = {
 };
 
 theme.typography.h4 = {
-    fontSize: '1.25rem',
+    fontSize: '1rem',
     '@media (min-width:600px)': {
-        fontSize: '1.25rem',
+        fontSize: '1rem',
     },
     [theme.breakpoints.up('md')]: {
-        fontSize: '1.5rem',
+        fontSize: '1.25rem',
     },
     paddingBottom: '10px',
 };
-
 
 function Menu() {
     return (
@@ -70,6 +69,11 @@ function Menu() {
                                 />
                             </ImageListItem>
                         </ImageList>
+                        <Typography variant="h4">(v)   vegetarian</Typography>
+                        <Typography variant="h4">(df)  dairy free</Typography>
+                        <Typography variant="h4">(gf)  gluten free</Typography>
+                        <Typography variant="h4">Vegan meals are specified as such on the menu.</Typography>
+                        <Typography variant="h4">Some meals can be made gluten free by substituting the chips with roast potatoes.</Typography>
                     </ThemeProvider>
                 </Container>
             </Box >

@@ -53,6 +53,9 @@ function Reservation() {
             <Box sx={{ width: '100%', height: '100vh' }} >
                 <Container sx={{ width: '100%', marginTop: 5, marginBottom: 5 }}>
                     <ThemeProvider theme={theme}>
+                        <Typography variant="h4">We only take reservations for inside seating in the restaurant.</Typography>
+                        <Typography variant="h4">To sit outside in our undercover heated terrace, or to enjoy the sunshine in our lovely beer garden, please just wonder on down and grab a table.</Typography>
+                        <Typography variant="h4">For group bookings larger than 8 people, please contact us on <a href="tel:0356594236">(03) 5659 4236</a>.</Typography>
                         <iframe width='100%' height='550px' src='https://www.opentable.com.au/r/loch-and-key-reservations-loch?restref=171767&lang=en-AU&ot_source=Restaurant%20website'></iframe>
                     </ThemeProvider>
                 </Container>
