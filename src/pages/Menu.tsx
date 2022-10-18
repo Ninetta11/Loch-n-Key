@@ -68,6 +68,13 @@ function Menu() {
                                     loading="lazy"
                                 />
                             </ImageListItem>
+                            <ImageListItem key='Breakfast Menu'>
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/assets/images/breakfast.jpg?auto=format`}
+                                    alt='Loch & Key Breakfast Menu'
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
                         </ImageList>
                         <Typography variant="h4">(v)   vegetarian</Typography>
                         <Typography variant="h4">(df)  dairy free</Typography>
