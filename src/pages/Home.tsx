@@ -39,7 +39,7 @@ function Home() {
             <Box width={'100%'} maxHeight={'450px'} id='hero'>
                 <Wrapper>
                     <ThemeProvider theme={theme}>
-                        <Typography variant="h1">Opening: Friday 21st October!</Typography>
+                        <Typography variant="h1">Now Open</Typography>
                     </ThemeProvider>
                 </Wrapper>
             </Box>
