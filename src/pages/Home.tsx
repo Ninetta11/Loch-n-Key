@@ -39,18 +39,17 @@ function Home() {
             <Box width={'100%'} maxHeight={'450px'} id='hero'>
                 <Wrapper>
                     <ThemeProvider theme={theme}>
-                        <Typography variant="h1">Opening: Friday 21st October!</Typography>
+                        {/* <Typography variant="h1">Now Open</Typography> */}
                     </ThemeProvider>
                 </Wrapper>
             </Box>
             <Box width={'100%'}>
                 <Container sx={{ width: '100%', marginTop: 5, marginBottom: 5 }}>
                     <ThemeProvider theme={theme}>
-                        <Typography variant="h3" textAlign="center"><Link href='/reservation'>Make a Reservation Now!</Link></Typography>
+                        {/* <Typography variant="h3" textAlign="center"><Link href='/reservation'>Make a Reservation Now!</Link></Typography> */}
                         <Typography variant="h3">Loch & Key is located in the picturesque Loch Village in South Gippsland, situated halfway along the route from Melbourne to Wilsons Promontory.</Typography>
                         <Typography variant="h3">Set right in the centre of Loch's vibrant Victoria Road, it is the perfect place to stop for lunch, dinner or just an afternoon drink.</Typography>
                         <Typography variant="h3">Choose from a cosy indoor dining room with open fireplace, a beer garden overlooking rolling hills, or the front terrace where you can enjoy the bustle of the town.</Typography>
-                        <Typography variant="h3">Open for breakfast, lunch and dinner on weekends and public holidays.</Typography>
                     </ThemeProvider>
                 </Container>
             </Box>
