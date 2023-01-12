@@ -59,12 +59,7 @@ function Contact() {
                             <Grid item xs={12} md={4}>
                                 <Typography variant="h3">Opening Hours</Typography>
                                 <List>
-                                    <ListItem><Typography variant="h4">Wednesday  11am til late</Typography></ListItem>
-                                    <ListItem><Typography variant="h4">Thursday  11am til late</Typography></ListItem>
-                                    <ListItem><Typography variant="h4">Friday  11am til late</Typography></ListItem>
-                                    <ListItem> <Typography variant="h4">Saturday  8am til late</Typography></ListItem>
-                                    <ListItem><Typography variant="h4">Sunday  8am til late</Typography></ListItem>
-                                    <ListItem><Typography variant="h4">Open all Public Holidays except for Christmas Day & Boxing Day</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">We are currently closed.</Typography></ListItem>
                                 </List>
                             </Grid>
                             <Grid item xs={12} md={4}>
