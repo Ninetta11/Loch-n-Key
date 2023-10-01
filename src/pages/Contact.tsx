@@ -59,7 +59,10 @@ function Contact() {
                             <Grid item xs={12} md={4}>
                                 <Typography variant="h3">Opening Hours</Typography>
                                 <List>
-                                    <ListItem><Typography variant="h4">We are currently closed.</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Thursday 4pm - 9pm</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Friday 12pm - 10pm</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Saturday 12pm - 10pm</Typography></ListItem>
+                                    <ListItem><Typography variant="h4">Sunday 12pm - 9pm</Typography></ListItem>
                                 </List>
                             </Grid>
                             <Grid item xs={12} md={4}>
