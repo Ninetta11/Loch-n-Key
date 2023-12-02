@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Container, Link, Typography } from '@mui/material';
+import { Box, Button, Container, Link, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Wrapper from '../components/Wrapper';
 
@@ -46,7 +46,9 @@ function Home() {
             <Box width={'100%'}>
                 <Container sx={{ width: '100%', marginTop: 5, marginBottom: 5 }}>
                     <ThemeProvider theme={theme}>
-                        {/* <Typography variant="h3" textAlign="center"><Link href='/reservation'>Make a Reservation Now!</Link></Typography> */}
+                        <Box textAlign="center" marginBottom={5}>
+                            <Button variant="outlined" size="large" color="primary" href='/reservation'>Make a Reservation Now!</Button>
+                        </Box>
                         <Typography variant="h3">Loch & Key is located in the picturesque Loch Village in South Gippsland, situated halfway along the route from Melbourne to Wilsons Promontory.</Typography>
                         <Typography variant="h3">Set right in the centre of Loch's vibrant Victoria Road, it is the perfect place to stop for lunch, dinner or just an afternoon drink.</Typography>
                         <Typography variant="h3">Choose from a cosy indoor dining room with open fireplace, a beer garden overlooking rolling hills, or the front terrace where you can enjoy the bustle of the town.</Typography>
